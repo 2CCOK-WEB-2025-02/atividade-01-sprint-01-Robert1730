@@ -11,12 +11,12 @@ public class ExercicioDificilController {
 
     @GetMapping("/ex-03/{n}")
     public ExercicioDificilResponse exercicioDificil(@PathVariable int n) {
-            // Teste novamente no Github
+
         int n1 = 0;
         int n2 = 1;
         int soma = 1;
 
-        if (n < 0){
+        if (n <= 0){
             resposta = new ExercicioDificilResponse(0,0);
         } else if (n == 1) {
             resposta = new ExercicioDificilResponse(1,1);
